@@ -8,7 +8,7 @@ struct xItem{
 	TAILQ_ENTRY(xItem) entries;
 };
 //初始化队列头
-TAILQ_HEAD(,xItem) queue_head;
+TAILQ_HEAD(xHead,xItem) queue_head;
 int main(void){
 	struct xItem *item;
 	struct xItem *tmpItem;
